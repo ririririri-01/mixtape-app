@@ -64,6 +64,9 @@ export default function Cassette({
   fromName = '',
   toName = '',
   spinning = false,
+  isPlaying = false,
+  onPlayPause = null,
+  hasSongs = false,
 }) {
   const uid = useId().replace(/:/g, '');
   const darkShade = getDarkShade(color);
@@ -186,6 +189,34 @@ export default function Cassette({
         stroke="#1A1208"
         strokeWidth="1.5"
       />
+
+      {/* ── 10. Play / pause button ── */}
+      {hasSongs && onPlayPause && (
+        <g
+          onClick={onPlayPause}
+          style={{ cursor: 'pointer', pointerEvents: 'all' }}
+          opacity="1"
+        >
+          <circle
+            cx="250" cy="245" r="22"
+            fill="#1A1208"
+            style={{ pointerEvents: 'all' }}
+          />
+          <title>{isPlaying ? 'Pause' : 'Play'}</title>
+          {isPlaying ? (
+            <>
+              <rect x="241" y="235" width="6" height="20" fill="white" style={{ pointerEvents: 'none' }} />
+              <rect x="253" y="235" width="6" height="20" fill="white" style={{ pointerEvents: 'none' }} />
+            </>
+          ) : (
+            <polygon
+              points="243,235 243,255 260,245"
+              fill="white"
+              style={{ pointerEvents: 'all', cursor: 'pointer' }}
+            />
+          )}
+        </g>
+      )}
     </svg>
   );
 }
