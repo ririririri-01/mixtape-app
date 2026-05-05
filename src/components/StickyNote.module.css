@@ -1,0 +1,39 @@
+.note {
+  background: #F9E97E;
+  padding: 24px 28px 28px;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 4px 6px 18px rgba(26, 18, 8, 0.22);
+  transform: rotate(-2deg);
+  font-family: 'Caveat', cursive;
+  position: relative;
+  border-top: 3px solid rgba(196, 169, 106, 0.4);
+}
+
+.note::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 18px;
+  background: rgba(196, 169, 106, 0.45);
+  border-radius: 2px;
+}
+
+.from {
+  display: block;
+  font-size: 13px;
+  color: #8B6F3A;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.text {
+  font-size: 20px;
+  color: #1A1208;
+  line-height: 1.5;
+  margin: 0;
+  white-space: pre-wrap;
+}

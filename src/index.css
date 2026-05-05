@@ -1,0 +1,21 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #F5EDD8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

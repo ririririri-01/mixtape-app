@@ -1,0 +1,167 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 16px;
+  background: #FFF8EC;
+  border: 1.5px solid #C4A96A;
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.trackNum {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #C0392B;
+  min-width: 24px;
+  padding-top: 6px;
+  line-height: 1;
+}
+
+.searchWrap {
+  position: relative;
+  flex: 1;
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1.5px solid #C4A96A;
+  border-radius: 6px;
+  background: #FFF8EC;
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  color: #1A1208;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input::placeholder {
+  color: #B0977A;
+}
+
+.input:focus {
+  border-color: #8B6F3A;
+}
+
+.locked {
+  border-color: #2A7D6F;
+  background: #f0faf8;
+}
+
+.lockedBadge {
+  font-size: 14px;
+  color: #2A7D6F;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #FFF8EC;
+  border: 1.5px solid #C4A96A;
+  border-radius: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  z-index: 100;
+  box-shadow: 0 8px 24px rgba(26, 18, 8, 0.14);
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.result:hover {
+  background: #EDE0C4;
+}
+
+.thumb {
+  width: 48px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.resultInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.resultTitle {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  color: #1A1208;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.resultChannel {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: #8B6F3A;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: #B0977A;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+
+.removeBtn:hover {
+  color: #C0392B;
+}
+
+.noteWrap {
+  padding-left: 36px;
+}
+
+.noteInput {
+  width: 100%;
+  padding: 7px 12px;
+  border: 1.5px dashed #C4A96A;
+  border-radius: 6px;
+  background: transparent;
+  font-family: 'Caveat', cursive;
+  font-size: 15px;
+  color: #8B6F3A;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.noteInput::placeholder {
+  color: #B0977A;
+  font-style: italic;
+}

@@ -1,0 +1,136 @@
+.page {
+  min-height: 100vh;
+  background: #F5EDD8;
+  padding: 60px 20px 80px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Loading */
+.loading {
+  min-height: 100vh;
+  background: #F5EDD8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.loadingText {
+  font-family: 'Caveat', cursive;
+  font-size: 26px;
+  color: #8B6F3A;
+  margin: 0;
+}
+
+.homeLink {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  color: #8B6F3A;
+  text-decoration: none;
+}
+
+.homeLink:hover {
+  color: #C0392B;
+}
+
+/* Sticky note area */
+.noteWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Cassette */
+.cassetteWrap {
+  width: min(480px, 90vw);
+}
+
+/* Tape header */
+.tapeHeader {
+  text-align: center;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(28px, 6vw, 48px);
+  font-weight: 700;
+  color: #1A1208;
+  margin: 0 0 8px;
+}
+
+.names {
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  color: #8B6F3A;
+  margin: 0;
+}
+
+.from {
+  color: #1A1208;
+}
+
+.arrow {
+  color: #C4A96A;
+}
+
+.to {
+  color: #1A1208;
+}
+
+/* Tracklist */
+.tracklistWrap {
+  width: 100%;
+  background: #EDE0C4;
+  border-radius: 14px;
+  padding: 28px 32px;
+}
+
+/* Copy link button */
+.copyBtn {
+  background: none;
+  border: 2px solid #1A1208;
+  border-radius: 30px;
+  padding: 0.65rem 1.8rem;
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1A1208;
+  box-shadow: 3px 3px 0 #C4A96A;
+  transition: background 0.2s, color 0.2s;
+}
+
+.copyBtn:hover,
+.copyBtnCopied {
+  background: #1A1208;
+  color: #F5EDD8;
+}
+
+/* Footer */
+.footer {
+  padding-top: 12px;
+}
+
+.footerLink {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: #B0977A;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.15s;
+}
+
+.footerLink:hover {
+  color: #1A1208;
+}
